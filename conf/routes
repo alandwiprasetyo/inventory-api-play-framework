@@ -1,0 +1,39 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing how to write asynchronous code
+#GET     /products                       controllers.ProductsController.getAllProduct()
+
+
+
+# Reporting
+GET         /sellings/report               controllers.SellingReportController.index()
+GET         /sellings/report/export        controllers.SellingReportController.export()
+
+# Reporting
+GET         /products/report               controllers.ProductValueController.index()
+GET         /products/report/export        controllers.ProductValueController.export()
+
+#Product
+
+GET         /products                      controllers.ProductsController.index
+GET         /products/available            controllers.ProductAvailableController.index
+POST        /products/add                  controllers.ProductsController.add()
+PUT         /products/:id/edit             controllers.ProductsController.edit(id : Int)
+GET         /products/:id                  controllers.ProductsController.show(id : Int)
+
+
+# Order
+GET         /orders                        controllers.OrderController.index
+GET         /orders/:id                    controllers.OrderController.show(id : Int)
+PUT         /orders/:id/edit               controllers.OrderController.edit(id : Int)
+POST        /orders/add                    controllers.OrderController.add()
+
+
+# Stock
+GET         /stocks                        controllers.StockController.index
+GET         /stocks/:id                    controllers.StockController.show(id : Int)
+PUT         /stocks/:id/edit               controllers.StockController.edit(id : Int)
+POST        /stocks/add                    controllers.StockController.add()
+
