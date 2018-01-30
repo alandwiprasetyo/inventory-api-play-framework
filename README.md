@@ -20,8 +20,8 @@ To run all tests :
   - [Products](#products)
   - [Orders](#orders)
   - [Stocks](#stocks)
-  - [Selling Reports](#Selling Reports)
-  - [Product Reports](#Product Reports)
+  - [Selling Reports](#selling-reports)
+  - [Product Reports](#product-reports)
 
 ## Products
 
