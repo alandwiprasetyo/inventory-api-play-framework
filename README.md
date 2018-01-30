@@ -1,4 +1,4 @@
-# Crossref REST API
+# INVENTORY REST API
 
 Technology:
 
