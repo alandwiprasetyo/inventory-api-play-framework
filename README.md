@@ -5,17 +5,17 @@ Technology:
 * Play framework (Scala)
 * SQLite
 
-#Running
+# Running
 
         $ sbt run
 
-#Testing
+# Testing
 
 To run all tests :
 
         $ sbt test
 
-#API Resources
+# API Resources
 
   - [Products](#products)
   - [Orders](#orders)
