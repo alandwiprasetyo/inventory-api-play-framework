@@ -4,7 +4,10 @@ Technology:
 
 * Play framework (Scala)
 * SQLite
-
+# Requirements
+  - Scala
+  - sbt (https://www.scala-sbt.org/download.html)
+  
 # Running
 
         $ sbt run
