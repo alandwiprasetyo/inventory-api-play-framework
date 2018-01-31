@@ -38,8 +38,6 @@ Using :
 
     curl --request GET localhost:9000/products
 
-### List Product Available Stock
-
 Response :
 
         [
@@ -66,6 +64,8 @@ Response :
           }
         ]
 
+### List Product Available Stock
+
 ### GET /products/available
 
 `GET localhost:9000/products/available`
@@ -73,6 +73,35 @@ Response :
 Using :
 
     curl --request GET localhost:9000/products/available
+
+Response :
+
+    [
+      {
+        "id": 1,
+        "name": "Zalekia Plain Casual Blouse (L,Broken White)",
+        "sku": "SSI-D00791015-LL-BWH",
+        "available": 13
+      },
+      {
+        "id": 2,
+        "name": "Deklia Plain Casual Blouse (L,Navy)",
+        "sku": "SSI-D00864612-LL-NAV",
+        "available": 9
+      },
+      {
+        "id": 3,
+        "name": "Deklia Plain Casual Blouse (L,Navy)",
+        "sku": "SSI-D00864612-LL-NAV",
+        "available": 0
+      },
+      {
+        "id": 6,
+        "name": "Zalekia Plain Casual Blouse (L,Broken White)",
+        "sku": "SSI-D00791015-LL-BWH",
+        "available": 0
+      }
+    ]
 
 ### Add Product
 
@@ -94,29 +123,6 @@ Request Example :
             "size": "M",
     }
 
-Response :
-
-    [
-      {
-        "id": 1,
-        "name": "Zalekia Plain Casual Blouse (L,Broken White)",
-        "sku": "SSI-D00791015-LL-BWH",
-        "available": 11
-      },
-      {
-        "id": 2,
-        "name": "Deklia Plain Casual Blouse (L,Navy)",
-        "sku": "SSI-D00864612-LL-NAV",
-        "available": 9
-      },
-      {
-        "id": 3,
-        "name": "Deklia Plain Casual Blouse (L,Navy)",
-        "sku": "SSI-D00864612-LL-NAV",
-        "available": 0
-      }
-    ]
-
 ### Edit Product
 
 ### PUT /products/{id}/edit
@@ -136,7 +142,6 @@ Request example:
         "color": "Broken White",
         "size": "L",
     }
-
 
 ## Stocks
 
